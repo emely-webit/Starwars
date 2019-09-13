@@ -23,8 +23,8 @@ export class Home extends Component {
                         <div className="card-content">
                             <h4>{film.title} {film.episode_id}</h4>
                             <i>{film.opening_crawl}</i>
-                            <p>{film.release_date}</p>
-                            <b>{film.producer}</b>
+                            <p><b>Release date:</b> {film.release_date}</p>
+                            <p><b>Producer:</b> {film.producer}</p>
                         </div>
                     </section>
                 )
@@ -34,7 +34,7 @@ export class Home extends Component {
         )
         return (
             <div>
-                <h1>Starwars movies</h1>
+                <h1>Starwars Films</h1>
                 {filmList}
             </div>
         )
