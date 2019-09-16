@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Starwars_img from '../starwars_logo.png'
 
 export class Home extends Component {
     state = {
@@ -20,7 +21,8 @@ export class Home extends Component {
             films.map(film => {
                 return(
                     <section key={film.id} className="post card">
-                        <div className="card-content">
+                        <img src={Starwars_img} alt="starwars logo"></img>
+                        <div className="card-content content">
                             <h4>{film.title} {film.episode_id}</h4>
                             <i>{film.opening_crawl}</i>
                             <p><b>Release date:</b> {film.release_date}</p>

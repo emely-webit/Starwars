@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.post img{
+  position: absolute;
+  top: -2px;
+  left: 1%;
+  opacity: 1;
+  width: 15%;
+}
+.post{
+  overflow: hidden;
+  padding-top: 60px;
+}
+nav div{
+  width: 72%;
+  margin: 0 auto;
+}

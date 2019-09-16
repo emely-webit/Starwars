@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Starwars_img from '../starwars_logo.png'
 
 export class Species extends Component {
     state = {
@@ -20,6 +21,7 @@ export class Species extends Component {
             species.map(specie => {
                 return(
                     <section key={specie.id} className="post card">
+                    <img src={Starwars_img} alt="starwars logo"></img>
                         <div className="card-content">
                             <h4>{specie.name}</h4>
                             <h5>Classification: {specie.classification}</h5>

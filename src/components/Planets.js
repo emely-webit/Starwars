@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Starwars_img from '../starwars_logo.png'
 
 export class Planets extends Component {
     state = {
@@ -20,6 +21,7 @@ export class Planets extends Component {
             planets.map(planet => {
                 return(
                     <section key={planet.id} className="post card">
+                    <img src={Starwars_img} alt="starwars logo"></img>
                         <div className="card-content">
                             <h4>Name: {planet.name}</h4>
                             <p><b>Rotation Periode:</b> {planet.rotation_period}</p>
